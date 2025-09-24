@@ -1,41 +1,15 @@
 # Operating Systems - Process Management
 
-This repository contains C programs demonstrating process creation and management concepts in operating systems.
+C programs demonstrating process creation and management.
 
-## Assignments
+## Files
 
-### Assignment 1 (`assignment1.c`)
-Demonstrates basic process creation using `fork()` system call:
-- Creates a child process
-- Shows process IDs (PIDs) of both parent and child
-- Parent process exits without waiting for child completion
+- `assignment1.c` - Basic fork() demonstration
+- `assignment2.c` - Process waiting with wait() and waitpid()
 
-### Assignment 2 (`assignment2.c`)
-Demonstrates advanced process management:
-- Creates two child processes using `fork()`
-- Shows different process waiting mechanisms:
-  - `wait()` - waits for any child process
-  - `waitpid()` - waits for a specific child process
-- Captures and displays exit status of child processes
-
-## Compilation
-
-To compile the programs:
+## Compile & Run
 
 ```bash
-gcc -o assignment1 assignment1.c
-gcc -o assignment2 assignment2.c
+gcc -o assignment1 assignment1.c && ./assignment1
+gcc -o assignment2 assignment2.c && ./assignment2
 ```
-
-## Running the Programs
-
-```bash
-./assignment1
-./assignment2
-```
-
-## System Requirements
-
-- Unix-like operating system (Linux, macOS)
-- GCC compiler
-- POSIX-compliant system calls support
