@@ -6,10 +6,12 @@ C programs demonstrating process creation and management.
 
 - `assignment1.c` - Basic fork() demonstration
 - `assignment2.c` - Process waiting with wait() and waitpid()
+- `assignment3.c` - Process cleanup with atexit()
 
 ## Compile & Run
 
 ```bash
 gcc -o assignment1 assignment1.c && ./assignment1
 gcc -o assignment2 assignment2.c && ./assignment2
+gcc -o assignment3 assignment3.c && ./assignment3
 ```
